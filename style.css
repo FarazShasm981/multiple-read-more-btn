@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+   
+}
+#text{
+    display: inline;
+    color: aliceblue;
+
+ 
+}
+h1,h2{
+    text-align: center;
+}
+.container{
+    background: linear-gradient(to top,#ff7f7f,#87a943);
+    width: 80%;
+    margin: 10px auto;
+   
+
+}

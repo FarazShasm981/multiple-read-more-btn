@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+
+<body>
+    <h1>My Name Is Faraz Shams</h1>
+    <div class="container">
+        
+        <p id="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis quibusdam incidunt
+            exercitationem nulla quisquam error consequatur minus minima inventore, temporibus distinctio atque odio
+            obcaecati beatae hic doloremque! Ipsam, quae ullam debitis deleniti maxime libero? Alias aperiam odit ut
+            laborum, facilis atque sequi incidunt neque placeat dolor, magnam quaerat facere corporis esse recusandae
+            aliquid nesciunt eos velit! Perspiciatis repellendus sunt vitae reprehenderit a ipsa doloribus molestias
+            ratione cumque iusto at quasi,  <span id="hidetext1" style="display: none;">dignissimos, eligendi, esse temporibus consequuntur
+                corrupti natus explicabo facere! Suscipit praesentium sint inventore, rerum recusandae maxime ipsum.
+                Quod odio, minus ipsa atque enim, dolor error sint perferendis aliquam tempora praesentium recusandae
+                alias facilis aut reprehenderit similique quae quibusdam tenetur sequi excepturi? Eum nostrum quae ipsam
+                autem? Cupiditate temporibus </span> <span id="hidetext2" style="display: none;">similique autem aperiam maxime accusamus saepe
+                nobis facere, laborum vitae necessitatibus exercitationem, praesentium deleniti sed ipsam. Culpa quae
+                quia, dolorem reiciendis a dolores commodi neque, aperiam repellat praesentium, soluta incidunt
+                obcaecati odit nam molestiae maxime corrupti non consequuntur autem magni id quaerat error voluptate.
+            </span> <span id="hidetext3" style="display: none;">Omnis, at. Expedita omnis sapiente cumque veritatis maxime voluptates neque
+                illo, nisi sint hic rerum. Sapiente hic pariatur magnam mollitia atque adipisci quas deleniti natus esse
+                dolores vel nobis incidunt ea repellendus, enim qui ex eos iure consequatur maxime, ab illum. Quibusdam
+                dolore, reprehenderit quisquam corrupti praesentium beatae tempora, lorem500</span></p>
+        <a href="#" id="btn" onclick="readMore()">See More</a>
+        <a href="#" id="btn1" style="display: none;" onclick="readMore1()">See More</a>
+        <a href="#" id="btn2" style="display: none;" onclick="readMore2()">See More</a>
+        <a href="#" id="btn3" style="display: none;" onclick="readMore3()">See Less</a>
+    </div>
+
+<h2>See More/Less button using with " If " statement in " Function() "</h2>
+
+    <script>
+        function readMore() {
+            var hidetext1 = document.getElementById("hidetext1");
+            var hidetext2 = document.getElementById("hidetext2");
+            var hidetext3 = document.getElementById("hidetext3");
+
+            var btn = document.getElementById("btn")
+            var btn1 = document.getElementById("btn1")
+            var btn2 = document.getElementById("btn2")
+            var btn3 = document.getElementById("btn3")
+            if (btn.innerText === "See More") {
+                hidetext1.style.display = "inline";
+                hidetext2.style.display = "none";
+                hidetext3.style.display = "none";
+                btn.style.display ="none"
+                btn1.style.display="inline"
+            }
+        }
+        function readMore1() {
+            var hidetext1 = document.getElementById("hidetext1");
+            var hidetext2 = document.getElementById("hidetext2");
+            var hidetext3 = document.getElementById("hidetext3");
+
+            var btn = document.getElementById("btn")
+            var btn1 = document.getElementById("btn1")
+            var btn2 = document.getElementById("btn2")
+            var btn3 = document.getElementById("btn3")
+            if (btn1.innerText === "See More") {
+                hidetext1.style.display = "inline";
+                hidetext2.style.display = "inline";
+                hidetext3.style.display = "none";
+                btn.style.display ="none"
+                btn1.style.display="none"
+                btn2.style.display="inline"
+            }
+        }
+        function readMore2() {
+            var hidetext1 = document.getElementById("hidetext1");
+            var hidetext2 = document.getElementById("hidetext2");
+            var hidetext3 = document.getElementById("hidetext3");
+
+            var btn = document.getElementById("btn")
+            var btn1 = document.getElementById("btn1")
+            var btn2 = document.getElementById("btn2")
+            var btn3 = document.getElementById("btn3")
+            if (btn2.innerText === "See More") {
+                hidetext1.style.display = "inline";
+                hidetext2.style.display = "inline";
+                hidetext3.style.display = "inline";
+                btn.style.display ="none"
+                btn1.style.display="none"
+                btn2.style.display="none"
+                btn3.style.display ="inline"
+            }
+        }
+        function readMore3() {
+            var hidetext1 = document.getElementById("hidetext1");
+            var hidetext2 = document.getElementById("hidetext2");
+            var hidetext3 = document.getElementById("hidetext3");
+
+            var btn = document.getElementById("btn")
+            var btn1 = document.getElementById("btn1")
+            var btn2 = document.getElementById("btn2")
+            var btn3 = document.getElementById("btn3")
+            if (btn3.innerText === "See Less") {
+                hidetext1.style.display = "none";
+                hidetext2.style.display = "none";
+                hidetext3.style.display = "none";
+                btn.style.display ="inline"
+                btn1.style.display="none"
+                btn2.style.display="none"
+                btn3.style.display ="none"
+            }
+        }
+        
+    </script>
+</body>
+
+</html>
